@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RL_dialog"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Update Category Name"
+            android:textColor="#00abeb"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="30dp"
+            android:background="#72a7e8" />
+
+        <EditText
+            android:id="@+id/edtTxt_updatepopup_categoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/edt_bg"
+            android:ems="10"
+            android:hint="Category Name"
+            android:padding="10dp"
+            android:textColor="#000000" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtTxt_updatepopup_categoryName"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_updatepopup_save"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_wh"
+                android:paddingBottom="0dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="0dp"
+                android:text="Save"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/btn_updatepopup_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/btn_updatepopup_save"
+                android:background="@drawable/button_wh"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:text="Cancel"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
